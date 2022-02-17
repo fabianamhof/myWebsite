@@ -3,7 +3,8 @@
 </template>
 
 <script>
-  import FullPageContent from '../components/FullPageContent'
+import FullPageContent from '../components/FullPageContent'
+
 
   export default {
     name: 'Home',

@@ -7,17 +7,6 @@
       <div class="d-flex align-center">
         <h1 class="text-h4 font-weight-light white--text">Fabian Amhof</h1>
       </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
     </v-app-bar>
     <router-view/>
   </v-app>
@@ -33,3 +22,9 @@ export default {
   }),
 };
 </script>
+
+<style>
+.my-app.v-application .primary--text {
+  color: white !important;
+}
+</style>
