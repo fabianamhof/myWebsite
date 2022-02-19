@@ -1,5 +1,5 @@
 <template>
-  <v-timeline style="max-width: 50em" light>
+  <v-timeline style="margin: 10px" light :dense="this.$vuetify.breakpoint.name === 'xs'">
     <v-timeline-item v-for="item in timeline_data" :key="item.header" :color="item.color">
       <template v-slot:opposite>
         <p class="font-weight-thin" style="margin: 0">{{item.from + (item.to == null ? '' : ' - ' + item.to)}}</p>
@@ -9,7 +9,6 @@
         <v-expand-transition>
           <div v-show="item.show">
             <v-divider></v-divider>
-
             <v-card-text>{{item.content}}</v-card-text>
           </div>
         </v-expand-transition>
@@ -80,5 +79,7 @@ export default {
 </script>
 
 <style scoped>
-
+.v-card__title {
+  word-break: normal; /* maybe !important  */
+}
 </style>
