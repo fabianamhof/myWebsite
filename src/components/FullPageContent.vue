@@ -4,24 +4,26 @@
     <div id="section0" class="section" :style="{'background': 'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(' + require('@/assets/me_mountains.jpg') + ')', 'background-size': 'cover'}">
       <div class="wrapper">
       <div class="content">
-        <p class="text-h3 text-md-h1 font-weight-thin white--text text-center ma-10">Welcome to my website.</p>
+        <p class="text-h3 text-md-h1 font-weight-thin white--text text-center ma-10">{{$t("section1.greeting")}}</p>
         <v-img style="border-radius: 50%; margin: auto;" min-width="7cm" width="20%" src="@/assets/me.jpeg"/>
-        <p class="text-h4 text-md-h3 font-weight-thin white--text text-center ma-10">Here you will get to know me a little better...</p>
+        <p class="text-h4 text-md-h3 font-weight-thin white--text text-center ma-10">{{$t("section1.content")}}</p>
       </div>
       </div>
     </div>
     <div id="section1" class="section">
       <div class="wrapper">
         <div class="content" style="max-width: 700px">
-        <h3 class="text-h5 font-weight-regular ma-10">About me...</h3>
-        <p class="text-h5 font-weight-thin">I was born in 1997 and live in Welsberg, South Tyrol. After some great years at the TFO Bruneck I was working at <a class="link" href="https://www.elpo.eu/">Elpo Bruneck</a>. There I was responsible for developing building control systems. After 3 years I decided to develop further and went to Innsbruck to study <a class="link" href="https://www.uibk.ac.at/studium/angebot/ba-informatik-19w/">Computer Science</a>. Now I am in the sixth semester and work on my Bachelor-Thesis about artificial intelligence. In the last three years I could gain a great overview over multiple areas in computer science and software developing. Next to my passion for software development, especially with web-technology, I love practicing sports like Hiking, Soccer and Tennis.
-        </p>
+        <h3 class="text-h5 font-weight-regular ma-10">{{$t("section2.header")}}</h3>
+        <i18n class="text-h5 font-weight-thin" path="section2.content">
+          <a place="Elpo" class='link' href="https://www.elpo.eu/">Elpo Bruneck</a>
+          <a place="UIBK" class="link" href="https://www.uibk.ac.at/studium/angebot/ba-informatik-19w/">Computer Science</a>
+        </i18n>
         </div>
       </div>
     </div>
     <div id="section2" class="section" >
       <div class="wrapper">
-        <h3 class="text-h4 font-weight-thin">Curriculum</h3>
+        <h3 class="text-h4 font-weight-thin">{{ $t("section3.header") }}</h3>
         <div style="margin: 0 auto 0  auto; max-width: 50em;">
         <my-timeline @timeline_changed="rebuild()" style="margin: 20px 10px 0px 10px"/>
         </div>
@@ -29,13 +31,13 @@
     </div>
     <div id="section3" class="section" >
       <div class="wrapper">
-        <h3 class="text-h4 font-weight-thin mb-10 mt-10">Made with...</h3>
+        <h3 class="text-h4 font-weight-thin mb-10 mt-10">{{$t("section4.MadeWith")}}</h3>
         <div class="d-flex" style="align-items: center; justify-content: center; flex-direction: row;">
           <a :href="item.link" class="zoom" v-for="item in frameworks" :key="item.name">
             <img :src="item.img"/>
           </a>
         </div>
-        <h3 class="text-h4 font-weight-thin mb-10 mt-10">Hosted on...</h3>
+        <h3 class="text-h4 font-weight-thin mb-10 mt-10">{{$t("section4.HostedOn")}}</h3>
         <div class="d-flex" style="align-items: center; justify-content: center; flex-direction: row;">
           <a :href="item.link" class="zoom" v-for="item in resources" :key="item.name">
             <img :src="item.img"/>
@@ -149,7 +151,6 @@
   .content{
     margin: auto;
     padding: 5%;
-
 
   }
   .wrapper{

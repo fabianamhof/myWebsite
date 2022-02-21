@@ -11,6 +11,7 @@ import App from './App.vue'
 
 import router from './router'
 import vuetify from './plugins/vuetify'
+import i18n from './i18n'
 
 Vue.use(VueFullPage);
 
@@ -18,5 +19,6 @@ new Vue({
   router,
   el: '#app',
   vuetify,
+  i18n,
   render: h => h(App)
 }).$mount('#app')

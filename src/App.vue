@@ -7,6 +7,8 @@
       <div class="d-flex align-center">
         <h1 class="text-h4 font-weight-light white--text">Fabian Amhof</h1>
       </div>
+      <v-spacer/>
+      <LocaleChanger/>
     </v-app-bar>
     <router-view/>
   </v-app>
@@ -14,9 +16,10 @@
 
 <script>
 
+import LocaleChanger from "@/components/LocaleChanger";
 export default {
   name: 'App',
-
+  components: {LocaleChanger},
   data: () => ({
     //
   }),

@@ -5,11 +5,11 @@
         <p class="font-weight-thin" style="margin: 0">{{item.from + (item.to == null ? '' : ' - ' + item.to)}}</p>
       </template>
       <v-card @mouseover="item.show = true; $emit('timeline_changed')" @mouseleave="item.show = false; $emit('timeline_changed')">
-        <v-card-title>{{item.header}}</v-card-title>
+        <v-card-title>{{ $t(item.header) }}</v-card-title>
         <v-expand-transition>
           <div v-show="item.show">
             <v-divider></v-divider>
-            <v-card-text>{{item.content}}</v-card-text>
+            <v-card-text>{{$t(item.content)}}</v-card-text>
           </div>
         </v-expand-transition>
       </v-card>
@@ -26,47 +26,47 @@ export default {
     return {
       timeline_data: [
         {
-          header: 'Birth',
-          content: 'Born in 1997',
+          header: "section3.itemBirth.header",
+          content: "section3.itemBirth.content",
           from: '22.11.1997',
           color: '#8B9BB5',
           show: false,
         },
         {
-          header: 'Elementary School',
-          content: 'Attended elementary school in Welsberg',
+          header: "section3.itemElementary.header",
+          content: "section3.itemElementary.content",
           from: '2003',
           to: '2008',
           color: '#D0CCC3',
           show: false,
         },
         {
-          header: 'Middle School',
-          content: 'Attended middle school in Welsberg',
+          header: "section3.itemMiddleSchool.header",
+          content: "section3.itemMiddleSchool.content",
           from: '2008',
           to: '2011',
           color: '#E5B07E',
           show: false,
         },
         {
-          header: 'High School',
-          content: 'Attended technological high school in Bruneck. After two year I have chosen to specialize in electrical engineering and automation and so I got basic knowledge of programming and electronics.',
+          header: "section3.itemHighSchool.header",
+          content: "section3.itemHighSchool.content",
           from: '2011',
           to: '2016',
           color: '#A86E49',
           show: false,
         },
         {
-          header: 'Elpo',
-          content: 'After the high school I decided to work as a smart building system developer at Elpo in Bruneck. By programming smart homes, intelligent lighting systems I was able to gain skills in KNX but also some Javascript.',
+          header: "section3.itemElpo.header",
+          content: "section3.itemElpo.content",
           from: '2016',
           to: '2019',
           color: '#4F2F16',
           show: false,
         },
         {
-          header: 'Studies in Computer Science',
-          content: 'After 3 exciting years I felt it was time to educate further and dive deeper into the software engineering area. Therefore starting studying computer science was the most straightforward decision, and it turned out to be a good one. Right now I am writing my bachelor thesis about artificial intelligence.',
+          header: "section3.itemComputerScience.header",
+          content: "section3.itemComputerScience.content",
           from: '2019',
           to: 'now',
           color: '#1F1607',

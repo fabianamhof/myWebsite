@@ -1,0 +1,41 @@
+{
+  "section1": {
+    "greeting": "Welcome to my website.",
+    "content": "Here you will get to know me a little better..."
+  },
+  "section2": {
+    "header": "About me...",
+    "content": "I was born in 1997 and live in Welsberg, South Tyrol. After some great years at the TFO Bruneck I was working at {Elpo}. There I was responsible for developing building control systems. After 3 years I decided to develop further and went to Innsbruck to study {UIBK}. Now I am in the sixth semester and work on my Bachelor-Thesis about artificial intelligence. In the last three years I could gain a great overview over multiple areas in computer science and software developing. Next to my passion for software development, especially with web-technology, I love practicing sports like Hiking, Soccer and Tennis."
+  },
+  "section3": {
+    "header": "Curriculum",
+    "itemBirth": {
+      "header": "Birth",
+      "content": "Born in 1997"
+    },
+    "itemElementary": {
+      "header": "Elementary School",
+      "content": "Attended elementary school in Welsberg"
+    },
+    "itemMiddleSchool": {
+      "header": "Middle School",
+      "content": "Attended Middle School in Welsberg"
+    },
+    "itemHighSchool": {
+      "header": "High School",
+      "content": "Attended technological high school in Bruneck. After two year I have chosen to specialize in electrical engineering and automation and so I got basic knowledge of programming and electronics."
+    },
+    "itemElpo": {
+      "header": "Elpo",
+      "content": "After the high school I decided to work as a smart building system developer at Elpo in Bruneck. By programming smart homes, intelligent lighting systems I was able to gain skills in KNX but also some Javascript."
+    },
+    "itemComputerScience": {
+      "header": "Studies in Computer Science",
+      "content": "After 3 exciting years I felt it was time to educate further and dive deeper into the software engineering area. Therefore starting studying computer science was the most straightforward decision, and it turned out to be a good one. Right now I am writing my bachelor thesis about artificial intelligence."
+    }
+  },
+  "section4": {
+    "MadeWith": "Made with...",
+    "HostedOn": "Hosted on..."
+  }
+}
