@@ -1,7 +1,7 @@
 <template>
   <div>
   <full-page :options="options" id="fullpage" ref="fullpage">
-    <div id="section0" class="section" :style="{'background': 'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(' + require('@/assets/me_mountains.jpg') + ')'}" style="background-size: cover;">
+    <div id="section0" class="section" :style="{'background': 'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(' + require('@/assets/me_mountains.jpg') + ')', 'background-size': 'cover'}">
       <div class="wrapper">
       <div class="content">
         <p class="text-h3 text-md-h1 font-weight-thin white--text text-center ma-10">Welcome to my website.</p>
@@ -29,10 +29,16 @@
     </div>
     <div id="section3" class="section" >
       <div class="wrapper">
-        <h3 class="text-h4 font-weight-thin mb-10">Made with...</h3>
+        <h3 class="text-h4 font-weight-thin mb-10 mt-10">Made with...</h3>
+        <div class="d-flex" style="align-items: center; justify-content: center; flex-direction: row;">
+          <a :href="item.link" class="zoom" v-for="item in frameworks" :key="item.name">
+            <img :src="item.img"/>
+          </a>
+        </div>
+        <h3 class="text-h4 font-weight-thin mb-10 mt-10">Hosted on...</h3>
         <div class="d-flex" style="align-items: center; justify-content: center; flex-direction: row;">
           <a :href="item.link" class="zoom" v-for="item in resources" :key="item.name">
-            <img style="border-radius: 50%" :src="item.img"/>
+            <img :src="item.img"/>
           </a>
         </div>
         <v-divider class="ma-16"></v-divider>
@@ -64,7 +70,7 @@
           anchors: ['page1', 'page2', 'page3', 'page4'],
           scrollOverflow: true
         },
-        resources:[
+        frameworks:[
           {
             name: "Vue",
             link: "https://vuejs.org/",
@@ -87,7 +93,14 @@
             link: "https://github.com/fabianamhof/myWebsite",
             img: require("@/assets/github.svg")
           }
-        ]
+        ],
+        resources:[
+          {
+            name: "AWS",
+            link: "https://aws.amazon.com/de/",
+            img: require("@/assets/aws.svg")
+          }
+        ],
       }
     },
     methods:{
@@ -101,12 +114,12 @@
 <style scoped>
   img{
     float: left;
-    width:  10vw;
+    width:  auto;
     min-width: 60px;
-    max-width: 150px;
-    height: 10vw;
+    max-width: 200px;
+    height: 7vw;
     min-height: 60px;
-    max-height: 150px;
+    max-height: 200px;
     object-fit: cover;
     margin: 10px;
   }
@@ -131,7 +144,7 @@
 
   .color:hover{
     -webkit-transition : -webkit-filter 500ms linear;
-    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+    filter:  sepia(100%) saturate(1000%) hue-rotate(10deg);
   }
   .content{
     margin: auto;
@@ -143,17 +156,14 @@
     margin-top: 64px;
   }
 
-  #section0{
-    background: linear-gradient(#F28D35, #a2532c);
-  }
   #section1{
-    background: linear-gradient(#a2532c, #F4B67B);
+    background: linear-gradient(#617084, #8b949c);
   }
   #section2{
-    background: linear-gradient(#F4B67B, #7781a4);
+    background: linear-gradient(#8b949c, #465164);
   }
   #section3{
-    background: linear-gradient(#7781a4, #808FAC);
+    background: linear-gradient(#465164, #262c38);
   }
 
 </style>
