@@ -13,6 +13,7 @@ export default {
   methods:{
     changeLang(lang){
       this.$i18n.locale = lang;
+      this.$eventBus.$emit("language_changed");
     }
   }
 }

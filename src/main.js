@@ -15,6 +15,8 @@ import i18n from './i18n'
 
 Vue.use(VueFullPage);
 
+Vue.prototype.$eventBus = new Vue();
+
 new Vue({
   router,
   el: '#app',
@@ -22,3 +24,4 @@ new Vue({
   i18n,
   render: h => h(App)
 }).$mount('#app')
+

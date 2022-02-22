@@ -4,13 +4,13 @@
     <div id="section0" class="section" :style="{'background': 'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(' + require('@/assets/me_mountains.jpg') + ')', 'background-size': 'cover'}">
       <div class="wrapper">
       <div class="content">
-        <p class="text-h3 text-md-h1 font-weight-thin white--text text-center ma-10">{{$t("section1.greeting")}}</p>
+        <p class="text-h4 text-md-h1 font-weight-thin white--text text-center ma-10">{{$t("section1.greeting")}}</p>
         <v-img style="border-radius: 50%; margin: auto;" min-width="7cm" width="20%" src="@/assets/me.jpeg"/>
-        <p class="text-h4 text-md-h3 font-weight-thin white--text text-center ma-10">{{$t("section1.content")}}</p>
+        <p class="text-h5 text-md-h3 font-weight-thin white--text text-center ma-10">{{$t("section1.content")}}</p>
       </div>
       </div>
     </div>
-    <div id="section1" class="section">
+    <div id="section1" class="section fp-auto-height-responsive">
       <div class="wrapper">
         <div class="content" style="max-width: 700px">
         <h3 class="text-h5 font-weight-regular ma-10">{{$t("section2.header")}}</h3>
@@ -21,7 +21,7 @@
         </div>
       </div>
     </div>
-    <div id="section2" class="section" >
+    <div id="section2" class="section fp-auto-height-responsive" >
       <div class="wrapper">
         <h3 class="text-h4 font-weight-thin">{{ $t("section3.header") }}</h3>
         <div style="margin: 0 auto 0  auto; max-width: 50em;">
@@ -70,7 +70,8 @@
           menu: '#menu',
           navigation: true,
           anchors: ['page1', 'page2', 'page3', 'page4'],
-          scrollOverflow: true
+          scrollOverflow: true,
+          responsiveWidth: 600
         },
         frameworks:[
           {
@@ -87,7 +88,7 @@
             name: "FullpageJs",
             link: "https://alvarotrigo.com/fullPage/",
             img: require("@/assets/fullpagejs.png")
-          }
+          } //TODO Add I18n
         ],
         links:[
           {
@@ -105,10 +106,17 @@
         ],
       }
     },
-    methods:{
-      rebuild(){
-        this.$refs.fullpage.api.reBuild();
+    methods: {
+      rebuild() {
+        if(this.$vuetify.breakpoint.name !== 'xs'){
+          this.$refs.fullpage.api.reBuild();
+        }
       }
+    },
+    mounted() {
+      this.$eventBus.$on("language_changed", () => {
+        this.rebuild();
+      });
     }
   }
 </script>
