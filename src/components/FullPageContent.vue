@@ -88,7 +88,7 @@
             name: "FullpageJs",
             link: "https://alvarotrigo.com/fullPage/",
             img: require("@/assets/fullpagejs.png")
-          } //TODO Add I18n
+          }
         ],
         links:[
           {
