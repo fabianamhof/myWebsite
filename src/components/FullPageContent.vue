@@ -12,7 +12,7 @@
     </div>
     <div id="section1" class="section fp-auto-height-responsive">
       <div class="wrapper">
-        <div class="content" style="max-width: 700px">
+        <div class="content" style="max-width: 900px">
         <h3 class="text-h5 font-weight-regular ma-10">{{$t("section2.header")}}</h3>
         <i18n class="text-h5 font-weight-thin" path="section2.content">
           <a place="Elpo" class='link' href="https://www.elpo.eu/">Elpo Bruneck</a>
@@ -71,7 +71,7 @@
           navigation: true,
           anchors: ['page1', 'page2', 'page3', 'page4'],
           scrollOverflow: true,
-          responsiveWidth: 600
+          responsiveWidth: 600,
         },
         frameworks:[
           {
@@ -108,8 +108,11 @@
     },
     methods: {
       rebuild() {
+        var self = this;
         if(this.$vuetify.breakpoint.name !== 'xs'){
-          this.$refs.fullpage.api.reBuild();
+          setTimeout(function(){
+            self.$refs.fullpage.api.reBuild();
+          }, 100);
         }
       }
     },

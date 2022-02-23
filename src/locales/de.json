@@ -1,37 +1,37 @@
 {
   "section1": {
-    "greeting": "Willkommen in meiner Website",
-    "content": "Hier kannst du mich ein kleines bisschen besser kennenlernen..."
+    "greeting": "Willkommen auf meiner Website",
+    "content": "Hier hast du die Möglichkeit, mich ein bisschen besser kennenzulernen..."
   },
   "section2": {
     "header": "Über mich...",
-    "content": "Ich wurde 1997 geboren und lebe in Welsberg, Südtirol. Nach einigen tollen Jahren in der TFO Bruneck war ich bei {Elpo} tätig. Dort war ich für die Entwicklung von Gebäudeleitsystemen zuständig. Nach 3 Jahren beschloss ich, mich weiterzuentwickeln und ging nach Innsbruck, um {UIBK} zu studieren. Jetzt bin ich im sechsten Semester und arbeite an meiner Bachelorarbeit über künstliche Intelligenz. In den letzten drei Jahren konnte ich mir einen guten Überblick über verschiedene Bereiche der Informatik und Softwareentwicklung verschaffen. Neben meiner Leidenschaft für die Softwareentwicklung, vor allem im Bereich der Web-Technologie, treibe ich gerne Sport wie Wandern, Fußball und Tennis."
+    "content": "Ich bin im Jahr 1997 geboren und lebe seither in Welsberg, einer Gemeinde im Oberpustertal (Südtirol). Nach dem Abschluss meiner fünfjährigen Ausbildung an der Technologischen Fachoberschule (TFO) in Bruneck, begann ich meinen Berufsweg im Unternehmen {Elpo}. Hier war ich insgesamt drei Jahre lang für die Entwicklung von Gebäudeleitsystemen zuständig. Nach dieser Berufserfahrung fasste ich den Beschluss mich weiterzubilden und begann das Studium {UIBK} an der Universität Innsbruck. Aktuell befinde ich mich im sechsten Semester und arbeite an meiner Bachelorarbeit zum Thema künstliche Intelligenz. In diesen drei Studienjahren konnte ich mir einen guten Überblick über die verschiedensten Bereiche der Informatik und Softwareentwicklung verschaffen. Neben meinem großen Interesse für die Softwareentwicklung und speziell für den Bereich der Web-Technologie treibe ich in meiner Freizeit leidenschaftlich gerne Sport wie Wandern, Fußball sowie Tennis."
   },
   "section3": {
     "header": "Lebenslauf",
     "itemBirth": {
       "header": "Geburt",
-      "content": "1997 geboren"
+      "content": "1997"
     },
     "itemElementary": {
       "header": "Grundschule",
-      "content": "Besuch der Grundschule in Welsberg"
+      "content": "Grundschule in Welsberg"
     },
     "itemMiddleSchool": {
       "header": "Mittelschule",
-      "content": "Besuch der Mittelschule in Welsberg"
+      "content": "Mittelschule in Welsberg"
     },
     "itemHighSchool": {
-      "header": "Oberschule",
-      "content": "Ich besuchte die technische Fachoberschule in Bruneck. Nach zwei Jahren habe ich mich für die Fachrichtung Elektrotechnik und Automatisierung entschieden und somit Grundkenntnisse in Programmierung und Elektronik erworben."
+      "header": "Technologische Fachoberschule (TFO)",
+      "content": "Nach zwei Jahren der Grundausbildung habe ich mich für die Fachrichtung Elektrotechnik und Automatisierung entschieden, wodurch ich bereits Grundkenntnisse in den Bereichen Programmierung und Elektronik erwerben durfte."
     },
     "itemElpo": {
       "header": "Elpo",
-      "content": "Nach der Schule entschied ich mich, als Systementwickler für intelligente Gebäude bei Elpo in Bruneck zu arbeiten. Durch die Programmierung von Smart Homes und intelligenten Beleuchtungssystemen konnte ich mir Kenntnisse in KNX und auch in Javascript aneignen."
+      "content": "Nach der Matura beschloss ich als Systementwickler für intelligente Gebäude für das Unternehmen Elpo in Bruneck zu arbeiten. Durch die Programmierung von Smart Homes und intelligenten Beleuchtungssystemen konnte ich mir Kenntnisse in KNX und auch in Javascript aneignen."
     },
     "itemComputerScience": {
       "header": "Studium Informatik in Innsbruck",
-      "content": "Nach 3 spannenden Jahren spürte ich den Drang, mich weiterzubilden und tiefer in den Bereich der Softwareentwicklung einzutauchen. Daher entschied ich mich Informatik zu studieren und es stellte sich heraus, dass es eine gute Entscheidung war. Im Moment schreibe ich meine Bachelorarbeit über künstliche Intelligenz."
+      "content": "Nach drei spannenden Berufsjahren verspürte ich das Bedürfnis mich weiterzubilden, um noch tiefer in den Bereich der Softwareentwicklung eintauchen zu können: Daher fasste ich den Entschluss das Informatik-Studium in Innsbruck zu absolvieren und es stellte sich heraus, dass es eine gute Entscheidung war. Derzeit schreibe ich an meiner Bachelorarbeit über das Thema künstliche Intelligenz."
     }
   },
   "section4": {
