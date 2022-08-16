@@ -31,7 +31,11 @@
     },
     "itemComputerScience": {
       "header": "Studies in Computer Science",
-      "content": "After 3 exciting years I felt it was time to educate further and dive deeper into the software engineering area. Therefore starting studying computer science was the most straightforward decision, and it turned out to be a good one. Right now I am writing my bachelor thesis about artificial intelligence."
+      "content": "After 3 exciting years I felt it was time to educate further and dive deeper into the software engineering area. Therefore starting studying computer science was the most straightforward decision, and it turned out to be a good one."
+    },
+    "itemSiMedia": {
+      "header": "SiMedia",
+      "content": "Since July 2022 I am a proud part of the SiMedia team. Using TypeScript, Vue and NodeJs, I develop both the frontend and backend of the SiMedia CLOUD! project."
     }
   },
   "section4": {

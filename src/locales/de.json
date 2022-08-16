@@ -31,7 +31,11 @@
     },
     "itemComputerScience": {
       "header": "Studium Informatik in Innsbruck",
-      "content": "Nach drei spannenden Berufsjahren verspürte ich das Bedürfnis mich weiterzubilden, um noch tiefer in den Bereich der Softwareentwicklung eintauchen zu können: Daher fasste ich den Entschluss das Informatik-Studium in Innsbruck zu absolvieren und es stellte sich heraus, dass es eine gute Entscheidung war. Derzeit schreibe ich an meiner Bachelorarbeit über das Thema künstliche Intelligenz."
+      "content": "Nach drei spannenden Berufsjahren verspürte ich das Bedürfnis mich weiterzubilden, um noch tiefer in den Bereich der Softwareentwicklung eintauchen zu können: Daher fasste ich den Entschluss das Informatik-Studium in Innsbruck zu absolvieren und es stellte sich heraus, dass es eine gute Entscheidung war."
+    },
+    "itemSiMedia": {
+      "header": "SiMedia",
+      "content": "Seit Juli 2022 bin ich ein stolzer Teil des SiMedia Teams. Mithilfe von TypeScript, Vue und NodeJs entwickle ich sowohl im Frontend als auch im Backend das SiMedia CLOUD! Projekt."
     }
   },
   "section4": {
