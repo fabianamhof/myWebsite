@@ -11,7 +11,7 @@
         </v-card>
       </div> -->
       <div id="section0" class="section" :style="{'background': 'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(' + require('@/assets/me_mountains.jpg') + ')', 'background-size': 'cover'}">
-      <div class="wrapper">
+      <div>
       <div class="content">
         <p class="text-h4 text-md-h1 font-weight-thin white--text text-center ma-10">{{$t("section1.greeting")}}</p>
         <v-img style="border-radius: 50%; margin: auto;" min-width="7cm" width="20%" src="@/assets/me.jpeg"/>
