@@ -1,31 +1,49 @@
 <template>
   <div>
     <full-page :options="options" id="fullpage" ref="fullpage">
-      <div id="section0" class="section">
+      <!-- <div id="section0" class="section">
         <v-card height="100%">
-          <v-img src="@/assets/me_mountains.jpg" class="white--text align-end" height="90vh">
-            <v-card-title class="text-h2 white--text" v-text="$t('section1.greeting')"></v-card-title>
+          <v-img src="@/assets/me_mountains.jpg" class="white--text align-end" height="90%">
+            <v-card-title class="text-h2 white--text" style="word-break: keep-all" v-text="$t('section1.greeting')"></v-card-title>
           </v-img>
-          <v-card-subtitle class="text-h3 font-weight-thin" v-text="$t('section1.content')"></v-card-subtitle>
+          <v-card-subtitle class="text-h4 text-sm-h3 font-weight-thin" v-text="$t('section1.content')">
+          </v-card-subtitle>
         </v-card>
+      </div> -->
+      <div id="section0" class="section" :style="{'background': 'linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(' + require('@/assets/me_mountains.jpg') + ')', 'background-size': 'cover'}">
+      <div class="wrapper">
+      <div class="content">
+        <p class="text-h4 text-md-h1 font-weight-thin white--text text-center ma-10">{{$t("section1.greeting")}}</p>
+        <v-img style="border-radius: 50%; margin: auto;" min-width="7cm" width="20%" src="@/assets/me.jpeg"/>
+        <p class="text-h5 text-md-h3 font-weight-thin white--text text-center ma-10">{{$t("section1.content")}}</p>
       </div>
+      </div>
+    </div>
       <div id="section1" class="section fp-auto-height-responsive">
         <div class="wrapper">
-          <v-card class="content" style="max-width: 70%">
-            <div class="d-flex flex-no-wrap justify-space-between">
-              <div style="width: 80%">
-                <v-card-title class="text-h5 font-weight-regular ma-10">{{ $t("section2.header") }}</v-card-title>
-                <i18n class="text-h5 font-weight-thin" path="section2.content">
-                  <a place="Elpo" class='link' href="https://www.elpo.eu/">Elpo Bruneck</a>
-                  <a place="UIBK" class="link" href="https://www.uibk.ac.at/studium/angebot/ba-informatik-19w/">Computer
-                    Science</a>
-                </i18n>
-              </div>
-              <v-avatar style="width: 20%; height: auto" class="ma-5">
-                <v-img src="@/assets/me.jpeg" style="border-radius: 50%;"></v-img>
-              </v-avatar>
-            </div>
-          </v-card>
+          <v-container>
+            <v-row justify="center">
+              <v-col sm="2" style="text-align: center; align-self: center;">
+                <v-avatar :size="$vuetify.breakpoint.xs ? '50%' : '90%'">
+                  <v-img src="@/assets/me2.jpeg"></v-img>
+                </v-avatar>
+              </v-col>
+              <v-col sm="8" xs="12">
+                <v-card class="content" elevation="24" color="#8B9BB5" dark>
+                  <v-card-title class="text-sm-h5 text-xs-h6 font-weight-regular ma-10">{{ $t("section2.header") }}
+                  </v-card-title>
+                  <i18n class="text-sm-h5 text-xs-h6 font-weight-thin" path="section2.content">
+                    <a place="Elpo" class='link' href="https://www.elpo.eu/">Elpo Bruneck</a>
+                    <a place="UIBK" class="link"
+                      href="https://www.uibk.ac.at/studium/angebot/ba-informatik-19w/">Computer
+                      Science</a>
+                  </i18n>
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-container>
+
+
         </div>
       </div>
       <div id="section2" class="section fp-auto-height-responsive">
@@ -144,7 +162,9 @@ img {
   margin: 10px;
 }
 
-.section {}
+.wrapper {
+  padding: 15% 5%
+}
 
 .link {
   text-decoration: none;
@@ -167,17 +187,13 @@ img {
 
 .color:hover {
   -webkit-transition: -webkit-filter 500ms linear;
-  filter: sepia(100%) saturate(1000%) hue-rotate(10deg);
+  filter: sepia(0%) saturate(0%) hue-rotate(-10deg);
 }
 
 .content {
   margin: auto;
   padding: 5%;
 
-}
-
-.wrapper {
-  margin-top: 64px;
 }
 
 #section1 {

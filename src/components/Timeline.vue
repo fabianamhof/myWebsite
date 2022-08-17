@@ -1,10 +1,10 @@
 <template>
-  <v-timeline style="margin: 10px" light :dense="this.$vuetify.breakpoint.name === 'xs'">
+  <v-timeline style="margin: 10px" dark :dense="this.$vuetify.breakpoint.name === 'xs'">
     <v-timeline-item v-for="item in timeline_data" :key="item.header" :color="item.color">
       <template v-slot:opposite>
         <p class="font-weight-light" style="margin: 0">{{item.from + (item.to == null ? '' : ' - ' + item.to)}}</p>
       </template>
-      <v-card @mouseover="item.show = true; $emit('timeline_changed')" @mouseleave="item.show = false; $emit('timeline_changed')">
+      <v-card @mouseover="item.show = true; $emit('timeline_changed')" @mouseleave="item.show = false; $emit('timeline_changed')" :color="item.color" elevation="24">
         <v-card-title>{{ $t(item.header) }}</v-card-title>
         <v-expand-transition>
           <div v-show="item.show">

@@ -5,7 +5,7 @@
       color="rgba(100, 100, 100, 0.2)"
     >
       <div class="d-flex align-center">
-        <h1 class="text-h4 font-weight-light white--text">Fabian Amhof</h1>
+        <h1 class="text-h4 font-weight-light">Fabian Amhof</h1>
       </div>
       <v-spacer/>
       <LocaleChanger/>
